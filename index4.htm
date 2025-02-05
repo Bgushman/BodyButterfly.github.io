@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🦋 Body Butterfly - Transform Your Mind and Body</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="transformation-style.css">
+
+    <style>
+        .mind img,
+        .body img {
+            width: 100%; /* Set the width to 100% to make both images the same size */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-butterfly"></i> 🦋 Body Butterfly
+        </a>
+        <nav class="navbar">
+            <a href="index.htm">Home</a>
+            <a href="index2.htm">Transformation</a>
+            <a href="index3.htm">About Me</a>
+            <a href="index4.htm">Sign Up</a>
+        </nav>
+    </header> 
+    
+    <div class="container">
+        <div class="signup">
+            <form id="signupForm">
+                <h1>Sign Up</h1>
+                <hr />
+                <p>Transform Your Mind and Body!</p>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required/>
+                <div id="emailError" class="error"></div>
+    
+                <label for="learnedAbout">How did you learn about Body Butterfly?</label>
+                <input type="text" id="learnedAbout" placeholder="Learned about Body Butterfly" required/>
+    
+                <label for="transformationGoal">Are you looking to transform your mind, body, or both?</label>
+                <select id="transformationGoal" required>
+                    <option value="mind">Mind</option>
+                    <option value="body">Body</option>
+                    <option value="both">Both</option>
+                </select>
+    
+                <label for="readyForChange">Are you ready for change?</label>
+                <input type="checkbox" id="readyForChange" required/>
+    
+                <button type="button" onclick="validateForm()"><span>Sign Up</span></button>
+                <p>Already have an account? <a href="#">Login here</a></p>
+                <div id="successMessage" class="success"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var learnedAbout = document.getElementById("learnedAbout").value;
+            var transformationGoal = document.getElementById("transformationGoal").value;
+            var readyForChange = document.getElementById("readyForChange").checked;
+
+            // Clear previous error messages
+            document.getElementById("emailError").innerHTML = "";
+
+            // Validate email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").innerHTML = "Invalid email format";
+                return;
+            }
+
+            // You can add more validation logic as needed
+
+            if (email && learnedAbout && transformationGoal && readyForChange) {
+                document.getElementById("signupForm").reset(); // Reset form fields
+                document.getElementById("successMessage").innerHTML = "Signup successful!";
+                // You may want to redirect the user or perform additional actions upon successful signup
+            } else {
+                document.getElementById("successMessage").innerHTML = ""; // Clear success message
+                alert("Please fill out all fields and agree to the terms.");
+            }
+        }
+    </script>
+</body>
+
+</html>
