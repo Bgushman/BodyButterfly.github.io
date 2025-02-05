@@ -1,0 +1,180 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #bde4f0;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.transformation {
+    background-color: #bde4f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.transformation-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.transformation h2,
+.transformation p {
+    color: #fff;
+}
+
+.transformation a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mind-body-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.mind,
+.body {
+    width: 45%;
+}
+
+.mind h3,
+.body h3 {
+    color: #bde4f0;
+    font-size: 24px;
+}
+
+.mind p,
+.body p {
+    color: #bde4f0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-us,
+.signup {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about-us h2,
+.signup h2 {
+    color: #ffb6c1;
+    font-size: 28px;
+}
+
+.about-us p,
+.signup p {
+    color: #ffb6c1;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.signup form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.signup input {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    font-size: 14px;
+}
+
+.signup button {
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #bde4f0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.blog-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog-text {
+    margin-top: 10px;
+    background-color: #ffb6c1; /* Updated background color */
+    padding: 10px;
+    border-radius: 5px;
+}
+.blog-text h3 {
+    color: #fff; /* Text color changed to white */
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.blog-text p {
+    color: #fff; /* Text color changed to white */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
